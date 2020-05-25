@@ -3,10 +3,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        int[][] A = {{0,12},{15,26}};
-        int[][] B = {{1,5},{8,12},{15,24},{25,26}};
-        int[][] res = IntervalListIntersections.intervalIntersection(A,B);
-        print2DArray(res);
+        int[] A = {1,3,7,1,7,5};
+        int[] B = {1,9,2,5,1};
+
+        int[] C = {2,5,1,2,5};
+        int[] D = {10,5,2,1,5,2};
+        System.out.println(new UncrossedLines().maxUncrossedLines(C,D));
     }
 
     private static void print2DArray(int[][] res) {
